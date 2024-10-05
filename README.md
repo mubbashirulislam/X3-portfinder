@@ -33,12 +33,12 @@ X3-PORTFINDER is a powerful, lightweight, and user-friendly port scanning tool d
 
 1. Clone this repository:
    ```
-   git clone https://github.com/mubbashirulislam/x3-portfinder.git
+   git clone https://github.com/mubbashirulislam/X3-portfinder.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd x3-portfinder
+   cd X3-portfinder
    ```
 
 3. (Optional) Set up a virtual environment:
