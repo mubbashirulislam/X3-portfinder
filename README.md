@@ -1,6 +1,6 @@
 # X3-PORTFINDER
 
-![X3-PORTFINDER Banner](https://via.placeholder.com/800x200.png?text=X3-PORTFINDER)
+![X3-PORTFINDER Banner](banner.gif)
 
 X3-PORTFINDER is a powerful, lightweight, and user-friendly port scanning tool developed by X3NIDE. It's designed to provide quick and detailed insights into open ports on target systems, with a focus on potential vulnerabilities.
 
@@ -47,17 +47,12 @@ X3-PORTFINDER is a powerful, lightweight, and user-friendly port scanning tool d
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
    ```
 
-4. Install required packages:
-   ```
-   pip install -r requirements.txt
-   ```
-
 ## Usage
 
 Run X3-PORTFINDER using the following command:
 
 ```
-python x3_portfinder.py <target> [start_port] [end_port]
+python x3port.py <target> [start_port] [end_port]
 ```
 
 - `<target>`: The IP address or hostname to scan (required)
@@ -68,43 +63,12 @@ python x3_portfinder.py <target> [start_port] [end_port]
 
 Scan all ports from 1 to 1024 on example.com:
 ```
-python x3_portfinder.py example.com
+python x3port.py example.com
 ```
 
 Scan ports 80 to 443 on 192.168.1.1:
 ```
-python x3_portfinder.py 192.168.1.1 80 443
-```
-
-## Sample Output
-
-```
-██╗  ██╗██████╗       ██████╗  ██████╗ ██████╗ ████████╗███████╗██╗███╗   ██╗██████╗ ███████╗██████╗ 
-╚██╗██╔╝╚════██╗      ██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██║████╗  ██║██╔══██╗██╔════╝██╔══██╗
- ╚███╔╝  █████╔╝█████╗██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
- ██╔██╗  ╚═══██╗╚════╝██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
-██╔╝ ██╗██████╔╝      ██║     ╚██████╔╝██║  ██║   ██║   ██║     ██║██║ ╚████║██████╔╝███████╗██║  ██║
-╚═╝  ╚═╝╚═════╝       ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
-                                  Developed by X3NIDE
-                        https://github.com/mubbashirulislam
-
-Scan Information
-----------------
-Target: 93.184.216.34
-Port Range: 1-1024
-Scan Started: 2023-10-05 12:00:00
-
-Scanning: [==================================================] 100.0%
-
-Scan Results
-------------
-Port 80 - HTTP
-Potential Vulnerability: Web app vulnerabilities, XSS, SQL injection
-
-Port 443 - HTTPS
-Potential Vulnerability: SSL/TLS misconfigurations, outdated ciphers
-
-Scan Completed: 2023-10-05 12:00:30
+python x3port.py 192.168.1.1 80 443
 ```
 
 ## Contributing
