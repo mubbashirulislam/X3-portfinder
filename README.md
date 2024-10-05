@@ -1,4 +1,4 @@
-# X3-PORTFINDER
+# X3-PORTFINDER - Port Scanner
 
 ![X3-PORTFINDER Banner](banner.gif)
 
